@@ -1,0 +1,31 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Baseline Results: Four-Digit Industry Code}
+\label{tab:baselinefourdigit}
+\begin{tabular}{l*{4}{c}}
+\toprule
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{Total}&\multicolumn{1}{c}{Invention}&\multicolumn{1}{c}{Utility}&\multicolumn{1}{c}{Design}\\
+\midrule
+Within 1km  &       0.141\sym{**} &       0.072         &       0.165\sym{***}&       0.024         \\
+            &     (0.072)         &     (0.052)         &     (0.055)         &     (0.052)         \\
+\addlinespace
+Within 1-3km&      -0.013         &       0.005         &       0.013         &      -0.026         \\
+            &     (0.035)         &     (0.024)         &     (0.027)         &     (0.021)         \\
+\addlinespace
+Within 3-5km&      -0.013         &      -0.015         &       0.005         &       0.002         \\
+            &     (0.031)         &     (0.020)         &     (0.025)         &     (0.019)         \\
+\midrule
+Observations&       59948         &       59948         &       59948         &       59948         \\
+Adj. R-squared&       0.465         &       0.465         &       0.463         &       0.407         \\
+Controls    &           Y         &           Y         &           Y         &           Y         \\
+Firm FEs    &           Y         &           Y         &           Y         &           Y         \\
+Industry$\times$Year FEs&           Y         &           Y         &           Y         &           Y         \\
+City$\times$Year FEs&           Y         &           Y         &           Y         &           Y         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Robust standard errors clustered at firm level}\\
+\multicolumn{5}{l}{\footnotesize Patents and firm characteristics use the inverse hyperbolic sine transformation}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

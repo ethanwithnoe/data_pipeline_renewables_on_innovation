@@ -1,0 +1,55 @@
+
+.env
+**/.env
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# every stage's inputs and outputs folder
+*/inputs/
+*/outputs/
+
+# data files 
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.dta
+*.parquet
+*.feather
+*.json
+*.geojson
+*.shp
+*.dbf
+*.shx
+*.prj
+*.cpg
+
+# geocoding checkpoints 
+*.checkpoint.jsonl
+
+# generated figures and rendered output
+*.jpg
+*.jpeg
+*.svg
+*.html
+*.pdf
+
+# run logs and generated text 
+*.log
+*.txt
+!requirements.txt
+
+# other
+*.zip
+*.gz
+*.7z
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
